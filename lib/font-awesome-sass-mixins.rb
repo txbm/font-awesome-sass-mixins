@@ -17,14 +17,10 @@ module FontAwesomeSassMixins
         @sass_path ||= File.join(lib_path, 'sass')
       end
 
-      def manifest_file
-        @manifest ||= File.join(sass_path, 'font-awesome-mixins.sass')
-      end
-
       def load_sass
         require 'sass'
 
-        ::Sass.load_paths << manifest_file
+        ::Sass.load_paths << sass_path
       end
     end
   end
