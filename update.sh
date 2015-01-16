@@ -7,7 +7,7 @@ SCSS_DIR=$FA_DIR"/scss"
 VARIABLES_FILE=$SCSS_DIR"/_variables.scss"
 CORE_FILE=$SCSS_DIR"/_core.scss"
 PATH_FILE=$SCSS_DIR"/_path.scss"
-OUTPUT_DIR="./lib/sass"
+OUTPUT_DIR="./lib/sass/font-awesome-mixins"
 EXTEND_FILE=$OUTPUT_DIR"/_extends.sass"
 
 function clean () {
@@ -38,7 +38,7 @@ function convert_variables_to_extends () {
   gawk -v output_file=$EXTEND_FILE '{ match($0, /(\$fa-var)-(.*): "(.*)";/, arr)
     if (!arr[0])
       next
-    print "%fa-icon-" arr[2] "\n" "  content:" " " "\""arr[3]"\"" >> output_file }' $VARIABLES_FILE
+    print "%fa-icon-" arr[2] "\n" "  &:before" "\n" "    content:" " " "\""arr[3]"\"" >> output_file }' $VARIABLES_FILE
 }
 
 # function make_font_face_definition () {} coming soon
