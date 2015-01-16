@@ -7,6 +7,14 @@ For those of us who want to use Font Awesome without class tags and without load
 ```bash
 gem install font-awesome-sass-mixins
 ```
+then
+
+```sass
+@import font-awesome-mixins
+```
+
+- Make sure you have the @font-face declaration somewhere in your SASS already. I may add that automatically in the near future.
+- Make sure your fonts directory is also setup and that your @font-face points at it. This gem cannot really help you with that, it's out of scope.
 
 ### Usage
 
