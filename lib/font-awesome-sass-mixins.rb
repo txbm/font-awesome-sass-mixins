@@ -18,7 +18,7 @@ module FontAwesomeSassMixins
       end
 
       def manifest_file
-        @manifest ||= File.join(sass_path, '_manifest.sass')
+        @manifest ||= File.join(sass_path, 'font-awesome-mixins.sass')
       end
 
       def load_sass
