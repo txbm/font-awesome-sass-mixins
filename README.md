@@ -15,6 +15,7 @@ then
 
 - Make sure you have the @font-face declaration somewhere in your SASS already. I may add that automatically in the near future.
 - Make sure your fonts directory is also setup and that your @font-face points at it. This gem cannot really help you with that, it's out of scope.
+- Make sure you set the `$fa-font-size-base` variable somewhere before you @import this extension.
 
 ### Usage
 
