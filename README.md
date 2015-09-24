@@ -1,6 +1,7 @@
 # font-awesome-sass-mixins
 For those of us who want to use Font Awesome without class tags and without loading every single class definition.
 
+#### Currently up to date with Font Awesome 4.4.0
 
 ### Installation
 
