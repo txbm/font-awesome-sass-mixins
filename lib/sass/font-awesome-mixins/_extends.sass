@@ -1,11 +1,13 @@
 %fa-base-styles
   display: inline-block
-  font: normal normal normal #{$fa-font-size-base}/1 FontAwesome
+  font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome
   font-size: inherit
   text-rendering: auto
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  transform: translate(0, 0)
+%fa-icon-500px
+  &:before
+    content: "\f26e"
 %fa-icon-adjust
   &:before
     content: "\f042"
@@ -24,6 +26,9 @@
 %fa-icon-align-right
   &:before
     content: "\f038"
+%fa-icon-amazon
+  &:before
+    content: "\f270"
 %fa-icon-ambulance
   &:before
     content: "\f0f9"
@@ -129,6 +134,9 @@
 %fa-icon-backward
   &:before
     content: "\f04a"
+%fa-icon-balance-scale
+  &:before
+    content: "\f24e"
 %fa-icon-ban
   &:before
     content: "\f05e"
@@ -147,6 +155,36 @@
 %fa-icon-bars
   &:before
     content: "\f0c9"
+%fa-icon-battery-0
+  &:before
+    content: "\f244"
+%fa-icon-battery-1
+  &:before
+    content: "\f243"
+%fa-icon-battery-2
+  &:before
+    content: "\f242"
+%fa-icon-battery-3
+  &:before
+    content: "\f241"
+%fa-icon-battery-4
+  &:before
+    content: "\f240"
+%fa-icon-battery-empty
+  &:before
+    content: "\f244"
+%fa-icon-battery-full
+  &:before
+    content: "\f240"
+%fa-icon-battery-half
+  &:before
+    content: "\f242"
+%fa-icon-battery-quarter
+  &:before
+    content: "\f243"
+%fa-icon-battery-three-quarters
+  &:before
+    content: "\f241"
 %fa-icon-bed
   &:before
     content: "\f236"
@@ -189,6 +227,9 @@
 %fa-icon-bitcoin
   &:before
     content: "\f15a"
+%fa-icon-black-tie
+  &:before
+    content: "\f27e"
 %fa-icon-bold
   &:before
     content: "\f032"
@@ -243,9 +284,21 @@
 %fa-icon-calendar
   &:before
     content: "\f073"
+%fa-icon-calendar-check-o
+  &:before
+    content: "\f274"
+%fa-icon-calendar-minus-o
+  &:before
+    content: "\f272"
 %fa-icon-calendar-o
   &:before
     content: "\f133"
+%fa-icon-calendar-plus-o
+  &:before
+    content: "\f271"
+%fa-icon-calendar-times-o
+  &:before
+    content: "\f273"
 %fa-icon-camera
   &:before
     content: "\f030"
@@ -291,9 +344,15 @@
 %fa-icon-cc-amex
   &:before
     content: "\f1f3"
+%fa-icon-cc-diners-club
+  &:before
+    content: "\f24c"
 %fa-icon-cc-discover
   &:before
     content: "\f1f2"
+%fa-icon-cc-jcb
+  &:before
+    content: "\f24b"
 %fa-icon-cc-mastercard
   &:before
     content: "\f1f1"
@@ -357,6 +416,9 @@
 %fa-icon-child
   &:before
     content: "\f1ae"
+%fa-icon-chrome
+  &:before
+    content: "\f268"
 %fa-icon-circle
   &:before
     content: "\f111"
@@ -375,6 +437,9 @@
 %fa-icon-clock-o
   &:before
     content: "\f017"
+%fa-icon-clone
+  &:before
+    content: "\f24d"
 %fa-icon-close
   &:before
     content: "\f00d"
@@ -417,6 +482,12 @@
 %fa-icon-comment-o
   &:before
     content: "\f0e5"
+%fa-icon-commenting
+  &:before
+    content: "\f27a"
+%fa-icon-commenting-o
+  &:before
+    content: "\f27b"
 %fa-icon-comments
   &:before
     content: "\f086"
@@ -432,12 +503,18 @@
 %fa-icon-connectdevelop
   &:before
     content: "\f20e"
+%fa-icon-contao
+  &:before
+    content: "\f26d"
 %fa-icon-copy
   &:before
     content: "\f0c5"
 %fa-icon-copyright
   &:before
     content: "\f1f9"
+%fa-icon-creative-commons
+  &:before
+    content: "\f25e"
 %fa-icon-credit-card
   &:before
     content: "\f09d"
@@ -555,6 +632,9 @@
 %fa-icon-expand
   &:before
     content: "\f065"
+%fa-icon-expeditedssl
+  &:before
+    content: "\f23e"
 %fa-icon-external-link
   &:before
     content: "\f08e"
@@ -591,6 +671,9 @@
 %fa-icon-fax
   &:before
     content: "\f1ac"
+%fa-icon-feed
+  &:before
+    content: "\f09e"
 %fa-icon-female
   &:before
     content: "\f182"
@@ -666,6 +749,9 @@
 %fa-icon-fire-extinguisher
   &:before
     content: "\f134"
+%fa-icon-firefox
+  &:before
+    content: "\f269"
 %fa-icon-flag
   &:before
     content: "\f024"
@@ -702,6 +788,9 @@
 %fa-icon-font
   &:before
     content: "\f031"
+%fa-icon-fonticons
+  &:before
+    content: "\f280"
 %fa-icon-forumbee
   &:before
     content: "\f211"
@@ -737,7 +826,16 @@
     content: "\f085"
 %fa-icon-genderless
   &:before
-    content: "\f1db"
+    content: "\f22d"
+%fa-icon-get-pocket
+  &:before
+    content: "\f265"
+%fa-icon-gg
+  &:before
+    content: "\f260"
+%fa-icon-gg-circle
+  &:before
+    content: "\f261"
 %fa-icon-gift
   &:before
     content: "\f06b"
@@ -792,6 +890,12 @@
 %fa-icon-hacker-news
   &:before
     content: "\f1d4"
+%fa-icon-hand-grab-o
+  &:before
+    content: "\f255"
+%fa-icon-hand-lizard-o
+  &:before
+    content: "\f258"
 %fa-icon-hand-o-down
   &:before
     content: "\f0a7"
@@ -804,6 +908,27 @@
 %fa-icon-hand-o-up
   &:before
     content: "\f0a6"
+%fa-icon-hand-paper-o
+  &:before
+    content: "\f256"
+%fa-icon-hand-peace-o
+  &:before
+    content: "\f25b"
+%fa-icon-hand-pointer-o
+  &:before
+    content: "\f25a"
+%fa-icon-hand-rock-o
+  &:before
+    content: "\f255"
+%fa-icon-hand-scissors-o
+  &:before
+    content: "\f257"
+%fa-icon-hand-spock-o
+  &:before
+    content: "\f259"
+%fa-icon-hand-stop-o
+  &:before
+    content: "\f256"
 %fa-icon-hdd-o
   &:before
     content: "\f0a0"
@@ -834,9 +959,39 @@
 %fa-icon-hotel
   &:before
     content: "\f236"
+%fa-icon-hourglass
+  &:before
+    content: "\f254"
+%fa-icon-hourglass-1
+  &:before
+    content: "\f251"
+%fa-icon-hourglass-2
+  &:before
+    content: "\f252"
+%fa-icon-hourglass-3
+  &:before
+    content: "\f253"
+%fa-icon-hourglass-end
+  &:before
+    content: "\f253"
+%fa-icon-hourglass-half
+  &:before
+    content: "\f252"
+%fa-icon-hourglass-o
+  &:before
+    content: "\f250"
+%fa-icon-hourglass-start
+  &:before
+    content: "\f251"
+%fa-icon-houzz
+  &:before
+    content: "\f27c"
 %fa-icon-html5
   &:before
     content: "\f13b"
+%fa-icon-i-cursor
+  &:before
+    content: "\f246"
 %fa-icon-ils
   &:before
     content: "\f20b"
@@ -849,6 +1004,9 @@
 %fa-icon-indent
   &:before
     content: "\f03c"
+%fa-icon-industry
+  &:before
+    content: "\f275"
 %fa-icon-info
   &:before
     content: "\f129"
@@ -864,6 +1022,12 @@
 %fa-icon-institution
   &:before
     content: "\f19c"
+%fa-icon-internet-explorer
+  &:before
+    content: "\f26b"
+%fa-icon-intersex
+  &:before
+    content: "\f224"
 %fa-icon-ioxhost
   &:before
     content: "\f208"
@@ -996,9 +1160,21 @@
 %fa-icon-male
   &:before
     content: "\f183"
+%fa-icon-map
+  &:before
+    content: "\f279"
 %fa-icon-map-marker
   &:before
     content: "\f041"
+%fa-icon-map-o
+  &:before
+    content: "\f278"
+%fa-icon-map-pin
+  &:before
+    content: "\f276"
+%fa-icon-map-signs
+  &:before
+    content: "\f277"
 %fa-icon-mars
   &:before
     content: "\f222"
@@ -1068,6 +1244,9 @@
 %fa-icon-motorcycle
   &:before
     content: "\f21c"
+%fa-icon-mouse-pointer
+  &:before
+    content: "\f245"
 %fa-icon-music
   &:before
     content: "\f001"
@@ -1080,9 +1259,30 @@
 %fa-icon-newspaper-o
   &:before
     content: "\f1ea"
+%fa-icon-object-group
+  &:before
+    content: "\f247"
+%fa-icon-object-ungroup
+  &:before
+    content: "\f248"
+%fa-icon-odnoklassniki
+  &:before
+    content: "\f263"
+%fa-icon-odnoklassniki-square
+  &:before
+    content: "\f264"
+%fa-icon-opencart
+  &:before
+    content: "\f23d"
 %fa-icon-openid
   &:before
     content: "\f19b"
+%fa-icon-opera
+  &:before
+    content: "\f26a"
+%fa-icon-optin-monster
+  &:before
+    content: "\f23c"
 %fa-icon-outdent
   &:before
     content: "\f03b"
@@ -1230,6 +1430,9 @@
 %fa-icon-refresh
   &:before
     content: "\f021"
+%fa-icon-registered
+  &:before
+    content: "\f25d"
 %fa-icon-remove
   &:before
     content: "\f00d"
@@ -1284,6 +1487,9 @@
 %fa-icon-rupee
   &:before
     content: "\f156"
+%fa-icon-safari
+  &:before
+    content: "\f267"
 %fa-icon-save
   &:before
     content: "\f0c7"
@@ -1473,6 +1679,12 @@
 %fa-icon-stethoscope
   &:before
     content: "\f0f1"
+%fa-icon-sticky-note
+  &:before
+    content: "\f249"
+%fa-icon-sticky-note-o
+  &:before
+    content: "\f24a"
 %fa-icon-stop
   &:before
     content: "\f04d"
@@ -1527,6 +1739,9 @@
 %fa-icon-taxi
   &:before
     content: "\f1ba"
+%fa-icon-television
+  &:before
+    content: "\f26c"
 %fa-icon-tencent-weibo
   &:before
     content: "\f1d5"
@@ -1596,6 +1811,9 @@
 %fa-icon-toggle-up
   &:before
     content: "\f151"
+%fa-icon-trademark
+  &:before
+    content: "\f25c"
 %fa-icon-train
   &:before
     content: "\f238"
@@ -1617,6 +1835,9 @@
 %fa-icon-trello
   &:before
     content: "\f181"
+%fa-icon-tripadvisor
+  &:before
+    content: "\f262"
 %fa-icon-trophy
   &:before
     content: "\f091"
@@ -1638,6 +1859,9 @@
 %fa-icon-turkish-lira
   &:before
     content: "\f195"
+%fa-icon-tv
+  &:before
+    content: "\f26c"
 %fa-icon-twitch
   &:before
     content: "\f1e8"
@@ -1710,6 +1934,9 @@
 %fa-icon-video-camera
   &:before
     content: "\f03d"
+%fa-icon-vimeo
+  &:before
+    content: "\f27d"
 %fa-icon-vimeo-square
   &:before
     content: "\f194"
@@ -1749,6 +1976,9 @@
 %fa-icon-wifi
   &:before
     content: "\f1eb"
+%fa-icon-wikipedia-w
+  &:before
+    content: "\f266"
 %fa-icon-windows
   &:before
     content: "\f17a"
@@ -1767,9 +1997,21 @@
 %fa-icon-xing-square
   &:before
     content: "\f169"
+%fa-icon-y-combinator
+  &:before
+    content: "\f23b"
+%fa-icon-y-combinator-square
+  &:before
+    content: "\f1d4"
 %fa-icon-yahoo
   &:before
     content: "\f19e"
+%fa-icon-yc
+  &:before
+    content: "\f23b"
+%fa-icon-yc-square
+  &:before
+    content: "\f1d4"
 %fa-icon-yelp
   &:before
     content: "\f1e9"
